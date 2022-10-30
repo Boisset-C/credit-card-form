@@ -99,6 +99,8 @@ function onInputChange(input, newValue) {
   } else if (firstFour.startsWith("5")) {
     logo.src = "mastercard.svg";
   }
+
+  //you can add in any symbol to add in any card type, visa mastercard
 }
 
 function updateInputValue(input, extraValue, start = 0, end = 0) {
