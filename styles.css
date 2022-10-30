@@ -101,7 +101,7 @@
   background-color: hsl(0, 0%, 100%, 0.15);
   top: -250px;
   left: -150px;
-  z-index: 1;
+  z-index: -1;
 }
 
 .credit-card .front::after {
@@ -111,7 +111,7 @@
   width: 600px;
   border-radius: 100%;
   background-color: hsl(0, 0%, 100%, 0.075);
-  top: -4750px;
+  top: -475px;
   left: -150px;
   z-index: -1;
 }

@@ -6,20 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
-    <title>Document</title>
+    <title>Credit Card Form Example</title>
   </head>
   <body>
     <form class="credit-card">
       <div class="front">
         <div class="card-data-row">
           <div class="brand-name">WDS BANK</div>
-          <img src="assets/visa.svg" class="logo" />
+          <img data-logo src="assets/visa.svg" class="logo" />
         </div>
         <fieldset class="form-group">
           <legend>Card Number</legend>
           <label for="cc-1">Card Number</label>
 
-          <div class="cc-inputs">
+          <div data-connected-inputs class="cc-inputs horizontal-input-stack">
             <input
               type="tel"
               maxlength="4"
@@ -32,7 +32,6 @@
               type="tel"
               maxlength="4"
               aria-label="Credit Card Second 4 Digits"
-              id="cc-1"
               required
               pattern="[0-9]{4}"
             />
@@ -40,15 +39,13 @@
               type="tel"
               maxlength="4"
               aria-label="Credit Card Third 4 Digits"
-              id="cc-1"
               required
               pattern="[0-9]{4}"
             />
             <input
               type="tel"
               maxlength="4"
-              aria-label="Credit Card Fourth 4 Digits"
-              id="cc-1"
+              aria-label="Credit Card Last 4 Digits"
               required
               pattern="[0-9]{4}"
             />
@@ -84,7 +81,7 @@
                   id="expiration-year"
                   aria-label="Expiration Year"
                   required
-                  data-experation-year
+                  data-expiration-year
                 ></select>
               </div>
             </fieldset>
